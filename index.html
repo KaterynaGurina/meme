@@ -22,25 +22,31 @@ But it must have the following features:
     <title>Document</title>
     <style>
       body{
-        background-color: black;
+        margin: 0;
+        padding: 0;
         height: 100%; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
       }      
       h1{
         text-transform: uppercase;
-        font-size: 1rem;
+        font-size: 2rem;
+        width: 100%; /* Ensures text box width matches the image width */
+        margin-top: 10px; 
       }
       #poster{
-        width: 50%;
-        height: 100vh;
-        margin: 0 auto;
+        display: inline-block;/* Adjust width based on the content */
         color: white;
         font-family: "Libre Baskerville",serif;
         text-align: center;
       }
       #picture{
-        width: 100%;
         border: 5px solid white;
-        max-height: 80%;
+        max-width: 100%; /* Limits the width to its natural width or less to fit the container */
+        max-height: 80vh; /* Limits the height to 80% of the viewport height */
+ 
       }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
